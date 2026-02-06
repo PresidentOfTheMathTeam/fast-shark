@@ -10,12 +10,29 @@
                 left: calc(200px + 100%);
             }
         }
+        @keyframes shake {
+            from {
+                transform: translate(-5%, 25%);
+            }
+            25% {
+                transform: translate(10%, 5%);
+            }
+            50% {
+                transform: translate(-5%, -10%);
+            }
+            75% {
+                transform: translate(10%, 5%);
+            }
+            to {
+                transform: translate(-5%, 25%);
+            }
+        }
     </style>
 </head>
 <body>
     <div style="position: fixed; top:50%;left:50%;transform:translate(-50%,-50%);">
         <h1 style="text-align: center;">L's Fast Shark:</h1>
-        <img src="https://media.tenor.com/eq3Bg1YF4lQAAAAC/shark-swimming.gif" style="width: 200px;">
+        <img src="https://media.tenor.com/eq3Bg1YF4lQAAAAC/shark-swimming.gif" style="width: 200px;animation-name: shake;animation-duration: 1s;animation-iteration-count: infinite;">
     </div>
     <img src="https://i.etsystatic.com/9119891/r/il/d639c9/1654265401/il_fullxfull.1654265401_3kp2.jpg" style="width:200px;position: fixed; top:20%;left:50%;transform:translate(-50%,-50%);animation-name: fish;animation-duration: 4s;animation-iteration-count: infinite;">
 </body>
