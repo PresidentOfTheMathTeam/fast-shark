@@ -27,14 +27,29 @@
                 transform: translate(-5%, 25%);
             }
         }
+
+        @keyframes kiss {
+            from {
+                left: -200px;
+            }
+            to {
+                left: 50%;
+            }
+        }
     </style>
 </head>
 <body>
     <div style="position: fixed; top:50%;left:50%;transform:translate(-50%,-50%);">
         <h1 style="text-align: center;">L's Fast Shark:</h1>
-        <img src="https://media.tenor.com/eq3Bg1YF4lQAAAAC/shark-swimming.gif" style="width: 200px;animation-name: shake;animation-duration: 1s;animation-iteration-count: infinite;">
+        <img id='s1' src="https://media.tenor.com/eq3Bg1YF4lQAAAAC/shark-swimming.gif" style="width: 200px;animation-name: shake;animation-duration: 1s;animation-iteration-count: infinite;">
     </div>
+    <img id='s2' src="https://static.vecteezy.com/system/resources/previews/004/642/068/original/cartoon-shark-illustration-of-shark-clipart-shark-free-vector.jpg" style="width:200px;position: fixed; top:50%;left:50%;transform:translate(-50%,-50%);animation-name: kiss;animation-duration: 10s;">
     <img src="https://i.etsystatic.com/9119891/r/il/d639c9/1654265401/il_fullxfull.1654265401_3kp2.jpg" style="width:200px;position: fixed; top:20%;left:50%;transform:translate(-50%,-50%);animation-name: fish;animation-duration: 4s;animation-iteration-count: infinite;">
 </body>
-
+<script>
+setTimeout(()=>{
+    document.querySelector("#s1").setAttribute("src", "https://backend.artreview.com/wp-content/uploads/2015/06/810800ef06b07f2aa93b2b9778d6bc34_0.png");
+    document.querySelector("#s2").setAttribute("src", "https://backend.artreview.com/wp-content/uploads/2015/06/810800ef06b07f2aa93b2b9778d6bc34_0.png");
+}, 10000)
+</script>
 </html>
